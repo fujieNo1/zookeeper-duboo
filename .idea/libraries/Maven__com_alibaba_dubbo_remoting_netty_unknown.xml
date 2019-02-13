@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.alibaba:dubbo-remoting-netty:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo-remoting-netty/unknown/dubbo-remoting-netty-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo-remoting-netty/unknown/dubbo-remoting-netty-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo-remoting-netty/unknown/dubbo-remoting-netty-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

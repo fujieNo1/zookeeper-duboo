@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- provider's application name, used for tracing dependency relationship -->
+    <dubbo:application name="demo-provider"/>
+
+    <!-- use multicast registry center to export service -->
+    <dubbo:registry  protocol="zookeeper" address="zookeeper://127.0.0.1:2181" timeout="3000"/>
+
+    <!-- use dubbo protocol to export service on port 20880 -->
+    <dubbo:protocol name="dubbo" port="20891"/>
+
+    <!-- service implementation, as same as regular local bean -->
+    <bean id="demoService" class="service.impl.DemoServiceImpl"/>
+
+    <!-- declare the service interface to be exported -->
+    <dubbo:service interface="service.DemoService" ref="demoService"/>
+
+</beans>
